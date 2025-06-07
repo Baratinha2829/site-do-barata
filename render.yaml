@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: site-do-barata
+    env: python
+    buildCommand: ""
+    startCommand: "python Servidor.py"
