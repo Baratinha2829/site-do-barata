@@ -1,7 +1,6 @@
 services:
   - type: web
-    name: meu-app-flask
-    env: python
+    name: protectice
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn Servidor.py"  
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Servidor:app
